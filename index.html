@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ecommerce">
+    <meta name="keywords2" content="webpage">
+    <meta name="author" content="Matheus Augusto">
+    <meta name="description" content="Uma página simples de e-commerce">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Soundboxup E-commerce</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="bx bx-headphone"></i>SoundBoxUp</a>
+
+      <ul class="navegação">
+        <li><a href="#">Visão Geral</a></li>
+        <li><a href="#">Teach Specs</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <!--Navegação-->
+
+      <div class="header-icons">
+        <!--Header icons-->
+        <i class="bx bx-cart-alt"></i>
+        <div id="menu">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="home-img">
+        <img src="./Images/headfone1.png" class="one" />
+      </div>
+      <!--home-img-->
+
+      <div class="home-text">
+        <h1>
+          Wireless <br />
+          Headphones
+        </h1>
+        <h5>The smarter way to listen</h5>
+        <h3>$199.00</h3>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <!--home-text-->
+    </section>
+    <!--home-->
+
+    <div class="main">
+      <div class="row">
+        <li>
+          <img src="./Images/headfone1.png" onclick="slider('./Images/main1.png')" />
+        </li>
+      </div>
+      <!--row-->
+
+      <div class="row2">
+        <li>
+          <img src="./Images/headfone2.png" onclick="slider('./Images/main2.png')" />
+        </li>
+      </div>
+      <!--row2-->
+
+      <div class="row3">
+        <li>
+          <img src="./Images/headfone3.png" onclick="slider('./Images/main3.png')" />
+        </li>
+      </div>
+      <!--row3-->
+    </div>
+    <!--main-->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

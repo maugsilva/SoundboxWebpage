@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: none;
+  list-style: none;
+  text-decoration: none;
+}
+/*Definindo configs gerais de fonte, cores*/
+
+:root {
+  --bg-color:var(--bg-color) #191919;
+  --text-color: #fff;
+  --main-color: #06fa9c;
+  --other-color: #fcfcfc;
+  --h1-font: 4rem;
+  --p-font: 1rem;
+}
+
+/*Configurando o body*/
+
+body {
+  background-color:#191919;
+  color: var(--text-color);
+}
+
+/*Configurando o header*/
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 8%;
+}
+
+/*Configurando a logo(texto) e logo(ícone)*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px var(--main-color);
+}
+
+.logo i{
+  color: var(--main-color);
+  font-size: 32px;
+  margin-right: 5px;
+  text-shadow: 2px 2px 1px #34e7f8;
+}
+
+/*Configurando a "navegação"*/
+
+.navegação {
+  display: flex;
+}
+
+.navegação a{
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin: 0 30px;
+  transition: a .55s ease;
+}
+
+.navegação a:hover {
+  color: var(--main-color);
+}
+
+/*Configurando o "header-icons"*/
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.header-icons i{
+  margin-right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header-icons i:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+/*Configurando os "home's"*/
+
+.section{
+
+  padding: 0 15%;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-text h1{
+  font-size: var(--h1-font);
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.home-text h5 {
+  color: #ffffff99;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  margin-top: 5px;
+}
+
+.home-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.home-img img{
+  max-width: 100%;
+  width: 37rem;
+  height: auto;
+  margin-left: 25%;
+}
+
+  /*Configurando o botão "Shop Now"*/
+
+.btn {
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: solid 2px var(--text-color);
+  transition: all.55 ease;
+  color: #fff;
+  text-shadow: 1px 1px 1px #90f8d0;
+  box-shadow: 2px 2px 1px #06fa9c;
+}
+
+.btn:hover {
+  background: var(--text-color);
+  border: 2px solid var(--text-color);
+  color: #000;
+}
+
+/*Configurando os "Main's"*/
+
+.main{
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main li img{
+  width: 50px;
+  height: auto;
+  max-width: 100%;
+}
+
+.row{
+  background: var(--main-color);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.row:hover {
+  transform: translateY(-8px);
+
+}
+
+.row2{
+  background: #2f4d6f;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+}
+
+.row2:hover{
+  transform: translateY(-8px);
+}
+
+.row3{
+  background: #3c3c3c;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+
+}
+
+.row3:hover{
+  transform: translateY(-8px);
+}
